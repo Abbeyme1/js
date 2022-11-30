@@ -154,5 +154,66 @@ export const Promises = () => {
 
   // PROMISE POLYFILL IMPLEMENTATION
 
+  // const PENDING = 0,
+  //   FULFILLED = 1,
+  //   REJECTED = 2;
+
+  // function CustomPromise(executor) {
+  //   let state = PENDING;
+  //   let value = null;
+
+  //   let handlers = [];
+  //   let catchers = [];
+
+  //   function resolve(result) {
+  //     if (state !== PENDING) return;
+
+  //     state = FULFILLED;
+  //     value = result;
+
+  //     handlers.forEach((handler) => handler(value));
+  //   }
+
+  //   function reject(error) {
+  //     if (state !== PENDING) return;
+
+  //     state = REJECTED;
+  //     value = error;
+
+  //     catchers.forEach((handler) => handler(value));
+  //   }
+
+  //   this.then = function (callback) {
+  //     if (state === FULFILLED) callback(value);
+  //     else {
+  //       handlers.push(callback);
+  //     }
+  //   };
+
+  //   this.catch = function (callback) {
+  //     if (state === REJECTED) callback(value);
+  //     else {
+  //       catchers.push(callback);
+  //     }
+  //   };
+
+  //   executor(resolve, reject);
+  // }
+
+  // var p = new CustomPromise((resolve, reject) => {
+  //   console.log("yes");
+  //   if (true) resolve("SUCCESS");
+  //   else reject("FAILED");
+  // });
+
+  // p.then((res) => {
+  //   console.log(res);
+  //   return new Promise((res, rej) => {
+  //     res("Abcd");
+  //   });
+  // }).catch((res) => {
+  //   console.log(res);
+  // });
+
   return <div>Promises</div>;
 };

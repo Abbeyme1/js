@@ -2,7 +2,8 @@ function Navbar() {
   return (
     <header>
       <div>
-        <ul></ul>
+        <ul>SignUp</ul>
+        <ul>SignIn</ul>
       </div>
     </header>
   );
