@@ -1,9 +1,8 @@
-import { Display } from "./js/Pollyfills/Display";
-
+import TimeoutAndInterval from "./js/Timeout-and-Interval";
 function App() {
   return (
     <div>
-      <Display />
+      <TimeoutAndInterval />
       {/* <F />
       <D /> */}
     </div>
